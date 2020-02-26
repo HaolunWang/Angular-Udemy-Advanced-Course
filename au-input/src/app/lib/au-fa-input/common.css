@@ -1,0 +1,31 @@
+.icon {
+    width: 20px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 2px;
+    border: none;
+} 
+/* host means style the whole selector */
+/* padding means the space between the component and border */
+:host{
+    border-width: 1px;
+    border-style: solid;
+    padding: 1px 0;
+    display: inline-block;
+}
+:host(.input-focus){
+    outline: none;
+    
+}
+:host /deep/ input{
+    /* :host prefix means any input that is part of this template should also have these styles applied */
+    /* but it will not work */
+    /* /deep/ is declared in favor of ::ng-deep, it is to break the style isolation barrier of the component*/
+    border: none;
+    outline: none;
+    height: 100%;
+    margin: 1px 0;
+    /* top and bottom is 1px, left and top is 0 */
+    box-sizing: border-box;
+    /* means the height includes content and padding but excludes the border */
+}

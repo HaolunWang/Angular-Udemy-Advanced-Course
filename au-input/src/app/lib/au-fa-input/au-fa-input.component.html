@@ -1,2 +1,5 @@
-<i [ngClass]="classes"></i>
-<input class="normal-input" type="email" name="email" placeholder="E-mail">
+<i class="icon fa" [ngClass]="classes"></i>
+<!-- <input class="normal-input" type="email" name="email" [placeholder]="placeholder"> -->
+<!-- this way makes the property placeholder is duplicate in both au-fa-input.component.html and app.component.html-->
+<!-- [placeholder] will be a property so this will be a property that we will pass on to this input and "placeholder" is from a virable -->
+<ng-content></ng-content>
