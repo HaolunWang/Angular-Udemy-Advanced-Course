@@ -6,8 +6,8 @@ import { AppComponent } from './app.component';
 import {HttpClientModule} from "@angular/common/http";
 import { AuInputModule } from './lib/au-input-module';
 import { AuMdInputComponent } from './lib/au-md-input/au-md-input.component';
-// import { AuFaInputComponent } from './lib/au-fa-input/au-fa-input.component';
-// import { InputRefDirective } from './lib/common/input-ref.directive';
+// import { AuFaInputComponent } from './lib/au-fa-input/au-fa-input.component'; // being put in AuInputModule
+// import { InputRefDirective } from './lib/common/input-ref.directive'; // being put in AuInputModule
 
 @NgModule({
   declarations: [
