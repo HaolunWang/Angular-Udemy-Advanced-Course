@@ -10,13 +10,13 @@
     <button (click)="tabPanel.selectTab(contactTab)">Contact</button>
   </ng-template>
 
-  <app-au-tab-panel #tabPanel [headerTemplate]="headerButton">
+  <app-au-tab-panel #tabPanel >
     <!-- #tabPanel is a reference for AuTabPanelComponent so that 
       we can access the methods in AuTabPanelComponent if we use tabPanel.methodName-->
     <app-au-tab title="Login" #loginTab>
       <form>
         <div class="form-field">
-          <label>Email:</label><input>
+          <label>Email:</label><input name="email" class="login-email">
         </div>
         <div class="form-field">
           <label>Password:</label><input>
