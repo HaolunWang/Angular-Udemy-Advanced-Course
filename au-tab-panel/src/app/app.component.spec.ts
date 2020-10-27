@@ -107,6 +107,9 @@ describe('AppComponent', () => {
 
       tabButtons[0].nativeElement.click();
 
+      // after triggering the click event we need to trigger manually the change detection mechanism of Angular
+      // otherwise, the changes will not be reflected back to the DOM
+      // so use fixture detectChanges
       fixture.detectChanges();
 
       const loginEmail = tabPanel.query(By.css('.login-email'));
